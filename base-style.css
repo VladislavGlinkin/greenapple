@@ -36,8 +36,12 @@ footer {
 	font-weight: bold;
 }
 
+a {
+	text-decoration: none;
+}
+
 a:link {
-	text-decoration: none
+	color: white;
 }
 
 a:visited {
