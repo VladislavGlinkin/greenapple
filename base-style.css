@@ -1,0 +1,120 @@
+h1 {
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px black;
+}
+
+.a-nav {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 30px;
+}
+
+header {
+	background-color: black;
+	padding: 20px;
+}
+
+body {
+	background-color: black;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+nav {
+	text-align: center;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px black;
+	background-color: black;
+	padding: 5px;
+	font-weight: bold;
+}
+
+a:link {
+	text-decoration: none
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: white;
+	font-weight: bold;
+}
+
+a:active {
+	color: white;
+	font-weight: bold;
+}
+
+
+section {
+	color: black;
+	text-align: center;
+	font-size: 25px;
+	background-color: white;
+	padding: 5px;
+}
+
+.video-box {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	align-items: center;
+}
+
+.video-box video {
+        height: 750px;
+        width: auto;
+}
+
+.video-box a {
+        height: 750px;
+        width: auto;
+}
+
+.video-box-vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.video-box-vertical video {
+	height: 250px;
+	width: auto;
+}
+
+.video-box-vertical a {
+        height: 250px;
+        width: auto;
+}
+
+.new-products {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.new-products h2 {
+	width: 300px;
+	height: auto;
+}
+
+.new-products li {
+	width: 325px;
+}
+
+.new-products img {
+	width: auto;
+        height: 200px;
+}
+
