@@ -1,107 +1,133 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" href="base-style.css"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="images/favicon/favicon.png">
 	<head>
+		<link rel="icon" type="image/x-icon" href="images/favicon/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<title>GreenApple</title>
 	</head>
 
-	<body>
-		<header>
-			<div class="main-header">
-				<h1>Green Apple</h1>
-			</div>
-
-			<nav>
-				<div class="a-nav">
-                	        	<a href="main-page.html">Главная</a> |
-        	                	<a href="macs.html">Mac</a> |
-	                		<a href="iphones.html">iPhone</a> |
-                        		<a href="watches.html">Apple Watch</a> |
-                	        	<a href="headphones.html">AirPods</a> |
-	                        	<a href="about.html">О нас</a>
-				</div>
-	                </nav>
+	<body class="bg-dark">
+		<header class="container d-flex justify-content-center align-items-center">
+			<h1 class="text-light p-3">Green Apple</h1>
+			<nav class="navbar navbar-expand-lg">
+					<ul class="nav nav-pills">
+							<div class="btn-group">
+									<a class="btn btn-dark btn-lg" type="button" href="main-page.html">Главная</a>
+									<a class="btn btn-dark btn-lg" href="macs.html">Mac</a>
+									<a class="btn btn-dark btn-lg" href="iphones.html">iPhone</a>
+									<a class="btn btn-dark btn-lg" href="watches.html">Apple Watch</a>
+									<a class="btn btn-dark btn-lg active" href="headphones.html">AirPods</a>
+									<a class="btn btn-dark btn-lg" href="about.html">О нас</a>
+							</div>
+					</ul>
+			</nav>
 
 		</header>
 
 		<section>
-			<h2>Наушники</h2>
+			<h2 class="display-4 text-center text-light">Наушники</h2>
 		</section>
 
 		<article>
-			<div class="new-products">
-				<img src="images/products/headphones/airpods-max.jpg.webp">
-				<ul>
-					<h2>Apple AirPods Max</h2>
-					<li>Тип конструкции: охватывающие</li>
-					<li>Микрофон: есть</li>
-					<li>Сенсорное управление: нет</li>
-					<li>Время работы на одном заряде: до 20 ч</li>
-					<h4>От 66.000Р</h4>
-				</ul>
+			<div class="container">
+				<div class="row justify-content-center align-items-center m-2">
+						<div class="col">
+								<img class="float-end rounded-4" style="height: 300px;" src="images/products/headphones/airpods-max.png">
+						</div>
+						<div class="col text-center text-light">
+								<h2>Apple AirPods Max</h2>
+								<ul class="list-group list-group-flush text-start">
+										<li class="list-group-item bg-dark text-light">Тип конструкции: охватывающие</li>
+										<li class="list-group-item bg-dark text-light">Микрофон: есть</li>
+										<li class="list-group-item bg-dark text-light">Сенсорное управление: нет</li>
+										<li class="list-group-item bg-dark text-light">Время работы на одном заряде: до 20 ч</li>
+								</ul>
+								<h4>От 66.000Р</h4>
+						</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/headphones/airpods-pro-2nd.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple AirPods Pro 2nd generation</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Тип конструкции: внутриканальные</li>
+									<li class="list-group-item bg-dark text-light">Микрофон: есть</li>
+									<li class="list-group-item bg-dark text-light">Сенсорное управление: есть</li>
+									<li class="list-group-item bg-dark text-light">Время работы на одном заряде: до 6 ч</li>
+							</ul>
+							<h4>От 33.000Р</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/headphones/airpods-pro-2.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple AirPods Pro 2</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Тип конструкции: внутриканальные</li>
+									<li class="list-group-item bg-dark text-light">Микрофон: есть</li>
+									<li class="list-group-item bg-dark text-light">Сенсорное управление: есть</li>
+									<li class="list-group-item bg-dark text-light">Время работы на одном заряде: до 6 ч</li>
+							</ul>
+							<h4>От 25.000Р</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/headphones/airpods-pro.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple AirPods Pro</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Тип конструкции: внутриканальные</li>
+									<li class="list-group-item bg-dark text-light">Микрофон: есть</li>
+									<li class="list-group-item bg-dark text-light">Сенсорное управление: есть</li>
+									<li class="list-group-item bg-dark text-light">Время работы на одном заряде: до 4.5 ч</li>
+							</ul>
+							<h4>От 24.000Р</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/headphones/airpods-3.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple AirPods 3</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Тип конструкции: вкладыши</li>
+									<li class="list-group-item bg-dark text-light">Микрофон: есть</li>
+									<li class="list-group-item bg-dark text-light">Сенсорное управление: есть</li>
+									<li class="list-group-item bg-dark text-light">Время работы на одном заряде: до 6 ч</li>
+							</ul>
+							<h4>От 17.300Р</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/headphones/airpods-2.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple AirPods 2</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Тип конструкции: вкладыши</li>
+									<li class="list-group-item bg-dark text-light">Микрофон: есть</li>
+									<li class="list-group-item bg-dark text-light">Сенсорное управление: есть</li>
+									<li class="list-group-item bg-dark text-light">Время работы на одном заряде: до 5 ч</li>
+							</ul>
+							<h4>От 17.300Р</h4>
+					</div>
+				</div>
 			</div>
-			<div class="new-products">
-                                <img src="images/products/headphones/airpods-pro-2nd.jpg.webp">
-                                <ul>
-                                        <h2>Apple AirPods Pro 2nd generation</h2>
-                                        <li>Тип конструкции: внутриканальные</li>
-					<li>Микрофон: есть</li>
-					<li>Сенсорное управление: есть</li>
-                                        <li>Время работы на одном заряде: до 6 ч</li>
-					<h4>От 33.000Р</h4>
-                                </ul>
-                        </div>
-			<div class="new-products">
-                                <img src="images/products/headphones/airpods-pro-2.jpg.webp">
-                                <ul>
-                                        <h2>Apple AirPods Pro 2</h2>
-                                        <li>Тип конструкции: внутриканальные</li>
-					<li>Микрофон: есть</li>
-                                        <li>Сенсорное управление: есть</li>
-                                        <li>Время работы на одном заряде: до 6 ч</li>
-					<h4>От 25.000Р</h4>
-                                </ul>
-                        </div>
-			<div class="new-products">
-                                <img src="images/products/headphones/airpods-pro.jpg.webp">
-                                <ul>
-					<h2>Apple AirPods Pro</h2>
-                                        <li>Тик конструкции: внутриканальные</li>
-					<li>Микрофон: есть</li>
-                                        <li>Сенсорное управление: есть</li>
-                                        <li>Время работы на одном заряде: до 4.5 ч</li>
-					<h4>От 24.000Р</h4>
-                                </ul>
-                        </div>
-			<div class="new-products">
-                                <img src="images/products/headphones/airpods-3.jpg.webp">
-                                <ul>
-                                        <h2>Apple AirPods 3</h2>
-                                        <li>Тип конструкции: вкладыши</li>
-					<li>Микрофон: есть</li>
-                                        <li>Сенсорное управление: есть</li>
-                                        <li>Время работы на одном заряде: до 6 ч</li>
-					<h4>От 17.300Р</h4>
-                                </ul>
-                        </div>
-			<div class="new-products">
-                                <img src="images/products/headphones/airpods-2.jpg.webp">
-                                <ul>
-                                        <h2>Apple AirPods 2</h2>
-                                        <li>Тип конструкции: вкладыши</li>
-					<li>Микрофон: есть</li>
-                                        <li>Сенсорное управление: есть</li>
-                                        <li>Время работы на одном заряде: до 5 ч</li>
-					<h4>От 13.400Р</h4>
-                                </ul>
-                        </div>
 		</article>
 		
-		<footer>
-                	<p>Author: Vladislav Glinkin</p>
-			<p><a href="mailto:VladislavDenisov2002@mail.ru">VladislavDenisov2002@mail.ru</a></p>
-        	</footer>
+		<div class="container">
+			<footer class="py-3 my-4">
+					<p class="text-center text-light fs-3 border border-secondary border-start-0 border-end-0"> Author: Vladislav Glinkin</p>
+			</footer>
+		</div>
 	</body>
 </html>

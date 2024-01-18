@@ -1,94 +1,118 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" href="base-style.css"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="images/favicon/favicon.png">
 	<head>
+		<link rel="icon" type="image/x-icon" href="images/favicon/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<title>GreenApple</title>
 	</head>
 
-	<body>
-		<header>
-			<h1>Green Apple</h1>
-
-			<nav>
-				<div class="a-nav">
-                	        	<a href="main-page.html">Главная</a> |
-        	                	<a href="">Mac</a> |
-	                		<a href="iphones.html">iPhone</a> |
-                        		<a href="watches.html">Apple Watch</a> |
-                	        	<a href="headphones.html">AirPods</a> |
-	                        	<a href="about.html">О нас</a>
-				</div>
-	                </nav>
+	<body class="bg-dark">
+		<header class="container d-flex justify-content-center align-items-center">
+			<h1 class="text-light p-3">Green Apple</h1>
+			<nav class="navbar navbar-expand-lg">
+					<ul class="nav nav-pills">
+							<div class="btn-group">
+									<a class="btn btn-dark btn-lg" type="button" href="main-page.html">Главная</a>
+									<a class="btn btn-dark btn-lg" href="macs.html">Mac</a>
+									<a class="btn btn-dark btn-lg" href="iphones.html">iPhone</a>
+									<a class="btn btn-dark btn-lg active" href="watches.html">Apple Watch</a>
+									<a class="btn btn-dark btn-lg" href="headphones.html">AirPods</a>
+									<a class="btn btn-dark btn-lg" href="about.html">О нас</a>
+							</div>
+					</ul>
+			</nav>
 
 		</header>
 
 		<section>
-			<h2>Смарт-часы</h2>
+			<h2 class="display-4 text-center text-light">Смарт-часы</h2>
 		</section>
 
 		<article>
-			<div class="new-products">
-				<img src="images/products/watches/apple-watch-9.webp">
-				<ul>
-					<h2>Apple Watch 9</h2>
-					<li>Год релиза: 2023</li>
-					<li>Измерения: ЭКГ, продолжительность и качество сна, температура тела, уровень кислорода в крови, уровень стресса и восстановление</li>
-					<li>Проигрывание видео: есть</li>
-					<li>Проигрывание аудио: есть</li>
-					<h4>От 66.000Р</h4>
-				</ul>
+			<div class="container">
+				<div class="row justify-content-center align-items-center m-2">
+						<div class="col">
+								<img class="float-end rounded-4" style="height: 300px;" src="images/products/watches/apple-watch-9.png">
+						</div>
+						<div class="col text-center text-light">
+								<h2>Apple Watch 9</h2>
+								<ul class="list-group list-group-flush text-start">
+										<li class="list-group-item bg-dark text-light">Год релиза: 2023</li>
+										<li class="list-group-item bg-dark text-light">Измерения: ЭКГ, продолжительность и качество сна, температура тела, уровень кислорода в крови, уровень стресса и восстановление</li>
+										<li class="list-group-item bg-dark text-light">Проигрывание видео: есть</li>
+										<li class="list-group-item bg-dark text-light">Проигрывание аудио: есть</li>
+								</ul>
+								<h4>От 66.000Р</h4>
+						</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/watches/apple-watch-8.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple Watch 8</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Год релиза: 2022</li>
+									<li class="list-group-item bg-dark text-light">Измерения: ЭКГ, продолжительность и качество сна, пульс, температура тела, уровень кислорода в крови</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание видео: есть</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание аудио: есть</li>
+							</ul>
+							<h4>От 43.000Р</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/watches/apple-watch-7.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple Watch 7</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Год релиза: 2021</li>
+									<li class="list-group-item bg-dark text-light">Измерения: ЭКГ, продолжительность и качество сна, пульс, уровень кислорода в крови</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание видео: есть</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание аудио: есть</li>
+							</ul>
+							<h4>От 41.000Р</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/watches/apple-watch-se-2022.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple Watch SE 2022</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Год релиза: 2022</li>
+									<li class="list-group-item bg-dark text-light">Измерения: количество шагов, потраченные калории, продолжительность и качество сна, пройденное расстояние, пульс</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание видео: есть</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание аудио: есть</li>
+							</ul>
+							<h4>От 33.000Р</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center m-2">
+					<div class="col">
+							<img class="float-end rounded-4" style="height: 300px;" src="images/products/watches/apple-watch-se.png">
+					</div>
+					<div class="col text-center text-light">
+							<h2>Apple Watch SE</h2>
+							<ul class="list-group list-group-flush text-start">
+									<li class="list-group-item bg-dark text-light">Год релиза: 2020</li>
+									<li class="list-group-item bg-dark text-light">Измерения: продолжительность и качество сна, пульс</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание видео: есть</li>
+									<li class="list-group-item bg-dark text-light">Проигрывание аудио: есть</li>
+							</ul>
+							<h4>От 29.000Р</h4>
+					</div>
+				</div>
 			</div>
-			<div class="new-products">
-                                <img src="images/products/watches/apple-watch-8.webp">
-                                <ul>
-                                        <h2>Apple Watch 8</h2>
-                                        <li>Год релиза: 2022</li>
-					<li>Измерения: ЭКГ, продолжительность и качество сна, пульс, температура тела, уровень кислорода в крови</li>
-					<li>Проигрывание видео: есть</li>
-                                        <li>Проигрывание аудио: есть</li>
-					<h4>От 43.000Р</h4>
-                                </ul>
-                        </div>
-			<div class="new-products">
-                                <img src="images/products/watches/apple-watch-7.webp">
-                                <ul>
-                                        <h2>Apple Watch 7</h2>
-                                        <li>Год релиза: 2021</li>
-					<li>Измерения: ЭКГ, продолжительность и качество сна, пульс, уровень кислорода в крови</li>
-                                        <li>Проигрывание видео: есть</li>
-                                        <li>Проигрывание аудио: есть</li>
-					<h4>От 41.000Р</h4>
-                                </ul>
-                        </div>
-			<div class="new-products">
-                                <img src="images/products/watches/apple-watch-se-2022.webp">
-                                <ul>
-					<h2>Apple Watch SE 2022</h2>
-                                        <li>Год релиза: 2022</li>
-					<li>Измерения: количество шагов, потраченные калории, продолжительность и качество сна, пройденное расстояние, пульс</li>
-                                        <li>Проигрывание видео: есть</li>
-                                        <li>Проигрывание аудио: есть</li>
-					<h4>От 33.000Р</h4>
-                                </ul>
-                        </div>
-			<div class="new-products">
-                                <img src="images/products/watches/apple-watch-se.webp">
-                                <ul>
-                                        <h2>Apple Watch SE</h2>
-                                        <li>Год релиза: 2020</li>
-					<li>Измерения: продолжительность и качество сна, пульс</li>
-                                        <li>Проигрывание видео: есть</li>
-                                        <li>Проигрывание аудио: есть</li>
-					<h4>От 29.000Р</h4>
-                                </ul>
-                        </div>
 		</article>
 		
-		<footer>
-                	<p>Author: Vladislav Glinkin</p>
-			<p><a href="mailto:VladislavDenisov2002@mail.ru">VladislavDenisov2002@mail.ru</a></p>
-        	</footer>
+		<div class="container">
+			<footer class="py-3 my-4">
+					<p class="text-center text-light fs-3 border border-secondary border-start-0 border-end-0"> Author: Vladislav Glinkin</p>
+			</footer>
+		</div>
 	</body>
 </html>
