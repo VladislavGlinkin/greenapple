@@ -19,6 +19,15 @@
 									<a class="btn btn-dark btn-lg" href="watches.html">Apple Watch</a>
 									<a class="btn btn-dark btn-lg" href="headphones.html">AirPods</a>
 									<a class="btn btn-dark btn-lg active" href="about.html">О нас</a>
+									<div class="dropdown">
+										<button class="btn btn-dark btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" aria-expanded="false">
+											Профиль
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<li><a class="dropdown-item" href="javascript:void(alert('Окно регистрации'))" href="#">Регистрация</a></li>
+											<li><a class="dropdown-item" href="javascript:void(alert('Окно входа'))" href="#">Вход</a></li>
+										</ul>
+								  </div>
 							</div>
 					</ul>
 			</nav>
@@ -41,5 +50,20 @@
 					<p class="text-center text-light fs-3 border border-secondary border-start-0 border-end-0"> Author: Vladislav Glinkin</p>
 			</footer>
 		</div>
+		<script>
+			// Dropdown меню
+			document.addEventListener("click", function(event) {
+				var dropdownMenu = document.querySelector('.dropdown-menu');
+				var dropdownButton = document.getElementById('dropdownMenuButton');
+				if (!dropdownMenu.contains(event.target) && event.target !== dropdownButton) {
+					dropdownMenu.classList.remove('show');
+				}
+			});
+
+			document.getElementById('dropdownMenuButton').addEventListener('click', function() {
+				var dropdownMenu = document.querySelector('.dropdown-menu');
+				dropdownMenu.classList.toggle('show');
+			});
+		</script>
 	</body>
 </html>
