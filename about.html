@@ -50,19 +50,19 @@
 					<p class="text-center text-light fs-3 border border-secondary border-start-0 border-end-0"> Author: Vladislav Glinkin</p>
 			</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 		<script>
 			// Dropdown меню
-			document.addEventListener("click", function(event) {
-				var dropdownMenu = document.querySelector('.dropdown-menu');
-				var dropdownButton = document.getElementById('dropdownMenuButton');
-				if (!dropdownMenu.contains(event.target) && event.target !== dropdownButton) {
-					dropdownMenu.classList.remove('show');
+			$(document).on("click", function(event) {
+				var dropdownMenu = $('.dropdown-menu');
+				var dropdownButton = $('#dropdownMenuButton');
+				if (!dropdownMenu.is(event.target) && !dropdownButton.is(event.target) && dropdownMenu.has(event.target).length === 0) {
+					dropdownMenu.removeClass('show');
 				}
 			});
-
-			document.getElementById('dropdownMenuButton').addEventListener('click', function() {
-				var dropdownMenu = document.querySelector('.dropdown-menu');
-				dropdownMenu.classList.toggle('show');
+		
+			$('#dropdownMenuButton').on('click', function() {
+				$('.dropdown-menu').toggleClass('show');
 			});
 		</script>
 	</body>
